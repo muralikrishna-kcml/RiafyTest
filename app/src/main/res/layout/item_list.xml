@@ -9,7 +9,7 @@
     android:paddingEnd="@dimen/padding_l_r"
     android:elevation="5dp"
     android:layout_margin="@dimen/padding_t_b"
-    android:background="@color/item_bg"
+    android:background="@color/white"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 

@@ -12,23 +12,23 @@ import javax.inject.Inject
 
 
 @HiltAndroidApp
-class BaseApplication : Application(), LifecycleObserver, Configuration.Provider {
+class BaseApplication : Application(){
     override fun onCreate() {
         super.onCreate()
 
         Timber.plant(Timber.DebugTree())
-        val myConfig = Configuration.Builder()
-            .build()
-        WorkManager.initialize(this, myConfig)
-        ProcessLifecycleOwner.get().lifecycle.addObserver(this)
+//        val myConfig = Configuration.Builder()
+//            .build()
+//        WorkManager.initialize(this, myConfig)
+//        ProcessLifecycleOwner.get().lifecycle.addObserver(this)
     }
 
-    @Inject
-    lateinit var workerFactory: HiltWorkerFactory
-
-    override fun getWorkManagerConfiguration() =
-        Configuration.Builder()
-            .setWorkerFactory(workerFactory)
-            .build()
+//    @Inject
+//    lateinit var workerFactory: HiltWorkerFactory
+//
+//    override fun getWorkManagerConfiguration() =
+//        Configuration.Builder()
+//            .setWorkerFactory(workerFactory)
+//            .build()
 
 }

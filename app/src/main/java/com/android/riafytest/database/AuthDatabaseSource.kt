@@ -6,6 +6,7 @@ import com.android.riafytest.model.ListItemApiModel
 
 interface AuthDatabaseSource {
     suspend fun insertAll(listDb: ListDbModel)
+    fun insert(listDb: ListDbModel)
     suspend fun updateList(listDb: ListDbModel)
     fun getList():LiveData<List<ListDbModel>>
     suspend fun deleteList()

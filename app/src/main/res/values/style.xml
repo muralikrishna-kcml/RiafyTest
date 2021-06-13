@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Filled button style-->
+    <style name="FilledButton" parent="">
+        <item name="android:height">@dimen/alert_button_h</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">5%</item>
+        <item name="cornerRadius">@dimen/button_corner</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

@@ -9,6 +9,9 @@ interface ListDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertAll(listDb: ListDbModel)
 
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    fun insert(listDb: ListDbModel)
+
     @Update
     suspend fun updateList(listDb: ListDbModel)
 
